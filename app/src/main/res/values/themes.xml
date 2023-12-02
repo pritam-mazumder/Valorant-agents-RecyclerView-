@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RV" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.RV" parent="Base.Theme.RV" />
+
+    <style name="name" parent="">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="fontFamily">@font/tungstenbold</item>
+        <item name="android:textColor">@color/font1</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="description" parent="">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/font2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="abilities" parent="">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="fontFamily">@font/tungstenbold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
