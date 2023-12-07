@@ -1,22 +1,29 @@
 package com.example.rv
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.rv.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), agentsAdapter.AgentItemClickListener {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var agentsKiList: ArrayList<agentsData>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val agentsKiList = AgentsDataGenerator.generateAgentsData()
+        agentsKiList = AgentsDataGenerator.generateAgentsData()
 
         binding.rvc.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding.rvc.adapter = agentsAdapter(this, agentsKiList)
+        binding.rvc.adapter = agentsAdapter(this, agentsKiList, this)
+    }
+
+    override fun onAgentItemClick(position: Int) {
+        val selectedAgent = agentsKiList[position]
+        Toast.makeText(this, "Clicked on ${selectedAgent.agName}", Toast.LENGTH_SHORT).show()
     }
 }

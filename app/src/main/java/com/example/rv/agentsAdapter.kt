@@ -8,8 +8,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class agentsAdapter(val requiredContext: Context, private val roleDetails: ArrayList<agentsData>) :
+class agentsAdapter(
+    val requiredContext: Context, private val roleDetails: ArrayList<agentsData>,
+    private val clickListener: AgentItemClickListener
+) :
     RecyclerView.Adapter<agentsAdapter.roleViewDetails>() {
+
+    interface AgentItemClickListener {
+        fun onAgentItemClick(position: Int)
+    }
+
 
     class roleViewDetails(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val aImg: ImageView = itemView.findViewById(R.id.i)
@@ -31,5 +39,9 @@ class agentsAdapter(val requiredContext: Context, private val roleDetails: Array
         holder.aImg.setImageResource(roleDetails[position].agImg)
         holder.aName.text = roleDetails[position].agName
         holder.aRole.text = roleDetails[position].agRole
+
+        holder.itemView.setOnClickListener {
+            clickListener.onAgentItemClick(position)
+        }
     }
 }
