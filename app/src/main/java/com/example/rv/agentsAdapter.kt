@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class agentsAdapter(val requiewdContext: Context, private val roleDetails: ArrayList<agentsData>) :
+class agentsAdapter(val requiredContext: Context, private val roleDetails: ArrayList<agentsData>) :
     RecyclerView.Adapter<agentsAdapter.roleViewDetails>() {
 
     class roleViewDetails(itemView: View) : RecyclerView.ViewHolder(itemView) {

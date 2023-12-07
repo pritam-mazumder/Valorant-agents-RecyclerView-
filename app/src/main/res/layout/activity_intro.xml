@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/vbackground"
+    tools:context=".Intro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/tungstenbold"
+        android:text="WE ARE VALORANT"
+        android:textColor="@color/font1"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Blend your style and experience on a\nglobal, competitive stage. You have 13\nrounds to attack and defend your side\nusing sharp gunplay and tactical abilities.\nAnd, with one life per-round, you'll need\nto think faster than your opponent if you\nwant to survive. Take on foes across\nCompetitive and Unranked modes as well\nas Deathmatch and Spike Rush."
+        android:textAlignment="center"
+        android:textColor="@color/font2"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/intro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+</LinearLayout>
