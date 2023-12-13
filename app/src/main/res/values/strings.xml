@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">Valorant agents</string>
+    <string name="app_name">Valorant</string>
     <string name="adTitle">YOUR AGENTS</string>
     <string name="adMsg">VIEW ALL AGENTS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <!--    <string name="app_name">Valorant agents</string>-->
 </resources>

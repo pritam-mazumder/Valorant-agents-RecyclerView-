@@ -1,4 +1,4 @@
-package com.example.rv
+package com.example.valorant
 
 import android.content.Context
 import android.view.LayoutInflater

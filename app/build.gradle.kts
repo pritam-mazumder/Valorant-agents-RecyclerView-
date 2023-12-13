@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.rv"
+    namespace = "com.example.valorant"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.rv"
+        applicationId = "com.example.valorant"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

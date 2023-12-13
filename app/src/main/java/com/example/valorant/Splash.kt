@@ -1,4 +1,4 @@
-package com.example.rv
+package com.example.valorant
 
 import android.content.Intent
 import android.os.Bundle

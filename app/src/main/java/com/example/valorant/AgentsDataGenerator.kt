@@ -1,4 +1,4 @@
-package com.example.rv
+package com.example.valorant
 
 object AgentsDataGenerator {
     fun generateAgentsData(): ArrayList<agentsData> {

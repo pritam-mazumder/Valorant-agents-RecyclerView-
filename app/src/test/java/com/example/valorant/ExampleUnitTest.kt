@@ -1,4 +1,4 @@
-package com.example.rv
+package com.example.valorant
 
 import org.junit.Test
 

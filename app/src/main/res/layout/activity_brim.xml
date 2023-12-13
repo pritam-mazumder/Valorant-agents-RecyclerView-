@@ -34,34 +34,44 @@
         app:justifyContent="space_evenly">
 
         <ImageView
+            android:id="@+id/brimQ"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/box"
             android:padding="10dp"
             android:src="@drawable/brimstone_q" />
 
-<ImageView
+        <ImageView
+            android:id="@+id/brimE"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/box"
             android:padding="10dp"
-            android:src="@drawable/brimstone_q" />
+            android:src="@drawable/brimstone_e" />
 
-<ImageView
+        <ImageView
+            android:id="@+id/brimC"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/box"
             android:padding="10dp"
-            android:src="@drawable/brimstone_q" />
+            android:src="@drawable/brimstone_c" />
 
-<ImageView
+        <ImageView
+            android:id="@+id/brimX"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/box"
             android:padding="10dp"
-            android:src="@drawable/brimstone_q" />
-
+            android:src="@drawable/brimstone_x" />
 
     </com.google.android.flexbox.FlexboxLayout>
+
+    <FrameLayout
+        android:id="@+id/brimF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp" />
 
 </LinearLayout>

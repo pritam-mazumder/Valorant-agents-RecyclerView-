@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RV"
+rootProject.name = "Valorant"
 include(":app")
  
